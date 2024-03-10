@@ -2,7 +2,8 @@
 # This script sets up a webserver for the deployment of a static website
 
 sudo apt-get update
-sudo apt-get install nginx
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
 
 sudo mkdir -p /data/web_static/{releases/test,shared}
 sudo touch /data/web_static/releases/test/index.html
