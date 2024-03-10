@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # This script sets up a webserver for the deployment of a static website
-if ! command -v ngnix &> /dev/null; then
-	sudo apt-get update
-	sudo apt-get install nginx
-fi
+
+sudo apt-get update
+sudo apt-get install nginx
 
 sudo mkdir -p /data/web_static/{releases/test,shared}
 sudo touch /data/web_static/releases/test/index.html
