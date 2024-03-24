@@ -56,7 +56,7 @@ def template_route(n=None):
     route to display a html page if n is an integer
     """
     if isinstance(n, int):
-        return render_template('5-number.html', number=n)
+        return render_template('5-number.html', n=n)
 
 
 if __name__ == '__main__':
